@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance · SilverHold</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(145deg, #0a0e1a 0%, #141c2e 50%, #1a2438 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #e8ecf6;
+            overflow: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background:
+                radial-gradient(ellipse at 30% 50%, rgba(251, 191, 36, 0.05) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(96, 165, 250, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+            animation: pulse-bg 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-bg {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        
+        .maintenance-box {
+            position: relative;
+            z-index: 1;
+            max-width: 520px;
+            width: 100%;
+            background: rgba(14, 22, 40, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 40px;
+            padding: 48px 36px;
+            text-align: center;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 80px rgba(251, 191, 36, 0.08);
+        }
+        
+        .maintenance-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: spin 3s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .maintenance-box h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #f0f0f0, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .maintenance-box p {
+            color: #8892a8;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .maintenance-info {
+            background: rgba(251, 191, 36, 0.08);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 20px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        
+        .maintenance-info .row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #c8d4e8;
+            font-size: 0.85rem;
+            padding: 6px 0;
+        }
+        
+        .maintenance-info .row i {
+            color: #fbbf24;
+            width: 20px;
+        }
+        
+        .maintenance-info .row strong {
+            color: #fbbf24;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.25s;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        
+        .btn-wa {
+            background: #25D366;
+            color: #0a0e1a;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .btn-wa:hover {
+            background: #20b85a;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #4a5a7a;
+            color: #8892a8;
+            margin-top: 10px;
+        }
+        
+        .btn-outline:hover {
+            background: rgba(74, 90, 122, 0.2);
+            color: #f0f4fe;
+            border-color: #6a7a9a;
+        }
+        
+        .footer-text {
+            color: #5a6a7a;
+            font-size: 0.75rem;
+            margin-top: 24px;
+        }
+        
+        @media (max-width: 480px) {
+            .maintenance-box {
+                padding: 32px 24px;
+                border-radius: 28px;
+            }
+            .maintenance-icon { font-size: 4rem; }
+            .maintenance-box h1 { font-size: 1.4rem; }
+            .maintenance-box p { font-size: 0.85rem; }
+            .btn { padding: 12px 24px; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-box">
+        <div class="maintenance-icon">🔧</div>
+        <h1>Sedang Maintenance</h1>
+        <p id="maintenanceMessage">
+            Website sedang dalam perbaikan. Mohon kembali lagi nanti.
+        </p>
+        
+        <div class="maintenance-info">
+            <div class="row">
+                <span>⏱️</span>
+                <span>Estimasi selesai: <strong id="estimatedTime">2 jam</strong></span>
+            </div>
+            <div class="row">
+                <span>💬</span>
+                <span>Butuh bantuan? Hubungi kami</span>
+            </div>
+        </div>
+        
+        <a href="#" id="waContactBtn" class="btn btn-wa">
+            <span>💬</span> Hubungi via WhatsApp
+        </a>
+        
+        <br>
+        
+        <a href="index.html" class="btn btn-outline">
+            <span>🔄</span> Coba Lagi
+        </a>
+        
+        <p class="footer-text">
+            © 2026 <span id="brandName">SilverHold</span>. All rights reserved.
+        </p>
+    </div>
+
+    <script src="config.js"></script>
+    <script>
+        if (window.SILVERHOLD_CONFIG) {
+            const cfg = window.SILVERHOLD_CONFIG;
+            
+            const msgEl = document.getElementById('maintenanceMessage');
+            if (msgEl && cfg.maintenance.message) {
+                msgEl.textContent = cfg.maintenance.message;
+            }
+            
+            const timeEl = document.getElementById('estimatedTime');
+            if (timeEl && cfg.maintenance.estimatedTime) {
+                timeEl.textContent = cfg.maintenance.estimatedTime;
+            }
+            
+            const waBtn = document.getElementById('waContactBtn');
+            if (waBtn && cfg.maintenance.contactWhatsApp) {
+                const msg = encodeURIComponent('Halo, saya ingin bertanya tentang maintenance website SilverHold.');
+                waBtn.href = `https://wa.me/${cfg.maintenance.contactWhatsApp}?text=${msg}`;
+            }
+            
+            const brandEl = document.getElementById('brandName');
+            if (brandEl && cfg.branding.name) {
+                brandEl.textContent = cfg.branding.name;
+            }
+            
+            document.title = `Maintenance · ${cfg.branding.name}`;
+        }
+    </script>
+</body>
+</html>
