@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="logo.jpg">  
+    
     <style>
         * {
             margin: 0;
@@ -60,7 +60,6 @@
             padding: 24px 20px 60px;
         }
         
-        /* ===== NAVBAR ===== */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -152,7 +151,6 @@
             transform: translateY(-1px);
         }
         
-        /* ===== HERO ===== */
         .hero {
             text-align: center;
             padding: 60px 20px 40px;
@@ -206,7 +204,6 @@
             margin-bottom: 40px;
         }
         
-        /* ===== BUTTONS ===== */
         .btn {
             background: #2a3650;
             border: none;
@@ -261,7 +258,6 @@
         
         .w-full { width: 100%; }
         
-        /* ===== STATS BAR ===== */
         .stats-bar {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -301,7 +297,6 @@
             font-weight: 600;
         }
         
-        /* ===== SECTIONS ===== */
         .section { margin-bottom: 60px; }
         
         .section-header {
@@ -327,7 +322,6 @@
             font-size: 0.95rem;
         }
         
-        /* ===== PRICING SINGLE (2 KARTU) ===== */
         .pricing-single {
             max-width: 900px;
             margin: 0 auto;
@@ -515,7 +509,6 @@
             font-weight: 700;
         }
         
-        /* Info tambahan */
         .info-note {
             max-width: 900px;
             margin: 24px auto 0;
@@ -534,7 +527,6 @@
             margin-right: 6px;
         }
         
-        /* ===== FEATURES ===== */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -581,7 +573,6 @@
             line-height: 1.6;
         }
         
-        /* ===== FAQ ===== */
         .faq-list {
             max-width: 800px;
             margin: 0 auto;
@@ -640,7 +631,6 @@
             padding: 0 24px 18px;
         }
         
-        /* ===== CTA BOTTOM ===== */
         .cta-bottom {
             background: linear-gradient(135deg, rgba(251,191,36,0.1), rgba(251,191,36,0.02));
             border: 1px solid rgba(251, 191, 36, 0.2);
@@ -687,7 +677,6 @@
             font-size: 1rem;
         }
         
-        /* ===== FOOTER ===== */
         .footer {
             text-align: center;
             padding: 40px 20px 20px;
@@ -730,7 +719,6 @@
             box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
         }
         
-        /* ===== FLOATING WA ===== */
         .wa-floating {
             position: fixed;
             bottom: 24px;
@@ -761,7 +749,6 @@
             50% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.7), 0 0 0 10px rgba(37, 211, 102, 0.1); }
         }
         
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 960px) {
             .pricing-single { grid-template-columns: 1fr; max-width: 480px; }
             .features-grid { grid-template-columns: repeat(2, 1fr); }
@@ -801,17 +788,17 @@
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <a href="#hero" class="brand">
-            <div class="brand-icon">⚡</div>
+            <div class="brand-icon" id="brandIcon">⚡</div>
             <div>
-                <div class="brand-text">SilverHold</div>
-                <div class="brand-sub">Jasa Website</div>
+                <div class="brand-text" id="brandName">SilverHold</div>
+                <div class="brand-sub" id="brandTagline">Jasa Website</div>
             </div>
         </a>
         <div class="nav-links">
             <a href="#pricing"><i class="fas fa-tags"></i> <span>Harga</span></a>
             <a href="#features"><i class="fas fa-star"></i> <span>Fitur</span></a>
             <a href="#faq"><i class="fas fa-question-circle"></i> <span>FAQ</span></a>
-            <a href="https://beaches-adequate-maui-afternoon.trycloudflare.com/Hosting-SilverHold/login_page.php" target="_blank" class="nav-cta">
+            <a href="#" id="navLoginBtn" class="nav-cta" target="_blank">
                 <i class="fas fa-sign-in-alt"></i> Login
             </a>
         </div>
@@ -820,10 +807,10 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
         <div class="badge-hero">
-            <i class="fas fa-bolt"></i> Jasa Pembuatan Website Profesional
+            <i class="fas fa-bolt"></i> <span id="heroBadge">Jasa Pembuatan Website Profesional</span>
         </div>
-        <h1>Website Impian Anda<br>Mulai dari Rp 50.000</h1>
-        <p>
+        <h1 id="heroTitle">Website Impian Anda<br>Mulai dari Rp 50.000</h1>
+        <p id="heroDesc">
             Jasa pembuatan website profesional + server berkualitas.
             Hanya bayar sekali untuk pembuatan, dan biaya server ringan per bulan.
         </p>
@@ -831,33 +818,33 @@
             <a href="#pricing" class="btn btn-gold">
                 <i class="fas fa-tags"></i> Lihat Harga
             </a>
-            <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20pesan%20jasa%20pembuatan%20website" target="_blank" class="btn btn-outline">
+            <a href="#" id="heroWaBtn" target="_blank" class="btn btn-outline">
                 <i class="fab fa-whatsapp"></i> Konsultasi Gratis
             </a>
         </div>
     </section>
 
     <!-- ===== STATS ===== -->
-    <div class="stats-bar">
+    <div class="stats-bar" id="statsBar">
         <div class="stat-box">
-            <div class="num">99.9%</div>
+            <div class="num" id="statUptime">99.9%</div>
             <div class="lbl">Uptime</div>
         </div>
         <div class="stat-box">
-            <div class="num">24/7</div>
+            <div class="num" id="statSupport">24/7</div>
             <div class="lbl">Support</div>
         </div>
         <div class="stat-box">
-            <div class="num">500+</div>
+            <div class="num" id="statCustomers">500+</div>
             <div class="lbl">Pelanggan</div>
         </div>
         <div class="stat-box">
-            <div class="num">5★</div>
+            <div class="num" id="statRating">5★</div>
             <div class="lbl">Rating</div>
         </div>
     </div>
 
-    <!-- ===== PRICING (2 KARTU: JASA + SERVER) ===== -->
+    <!-- ===== PRICING ===== -->
     <section class="section" id="pricing">
         <div class="section-header">
             <h2><i class="fas fa-tags"></i> Harga Transparan</h2>
@@ -865,13 +852,12 @@
         </div>
 
         <div class="pricing-single">
-            <!-- KARTU 1: JASA PEMBUATAN -->
             <div class="price-card primary">
                 <div class="featured-tag">⭐ Sekali Bayar</div>
                 <div class="plan-icon">🛠️</div>
                 <h3>Jasa Pembuatan</h3>
                 <div class="plan-desc">Website profesional siap pakai</div>
-                <div class="price-amount">Rp 50<span>rb</span></div>
+                <div class="price-amount" id="priceService">Rp 50<span>rb</span></div>
                 <div class="price-period">sekali bayar</div>
                 <ul class="feature-list">
                     <li><i class="fas fa-check"></i> Desain modern & responsif</li>
@@ -881,18 +867,17 @@
                     <li><i class="fas fa-check"></i> Integrasi WhatsApp</li>
                     <li><i class="fas fa-check"></i> Revisi 2x</li>
                 </ul>
-                <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20pesan%20Jasa%20Pembuatan%20Website%20Rp%2050.000" target="_blank" class="btn btn-gold w-full">
+                <a href="#" id="orderServiceBtn" target="_blank" class="btn btn-gold w-full">
                     <i class="fab fa-whatsapp"></i> Order Jasa
                 </a>
             </div>
 
-            <!-- KARTU 2: BIAYA SERVER -->
             <div class="price-card secondary">
                 <div class="featured-tag">🔁 Per Bulan</div>
                 <div class="plan-icon">🌐</div>
                 <h3>Biaya Server</h3>
                 <div class="plan-desc">Hosting & maintenance bulanan</div>
-                <div class="price-amount">Rp 20<span>rb</span></div>
+                <div class="price-amount" id="priceServer">Rp 20<span>rb</span></div>
                 <div class="price-period">per bulan</div>
                 <ul class="feature-list">
                     <li><i class="fas fa-check"></i> Hosting NVMe SSD</li>
@@ -902,13 +887,13 @@
                     <li><i class="fas fa-check"></i> Update & maintenance</li>
                     <li><i class="fas fa-check"></i> Support prioritas</li>
                 </ul>
-                <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20tanya%20soal%20Biaya%20Server%20Rp%2020.000%2Fbulan" target="_blank" class="btn btn-outline w-full">
+                <a href="#" id="orderServerBtn" target="_blank" class="btn btn-outline w-full">
                     <i class="fab fa-whatsapp"></i> Tanya Server
                 </a>
             </div>
         </div>
 
-        <div class="info-note">
+        <div class="info-note" id="infoNote">
             <i class="fas fa-info-circle"></i>
             <strong>Total awal:</strong> Rp 50.000 (jasa) + Rp 20.000 (bulan pertama) = <strong style="color:#fbbf24;">Rp 70.000</strong>.
             Selanjutnya hanya Rp 20.000/bulan untuk biaya server.
@@ -1010,8 +995,8 @@
     <!-- ===== CTA BOTTOM ===== -->
     <section class="cta-bottom">
         <h2>Siap Punya Website Sendiri?</h2>
-        <p>Mulai dari Rp 50.000 untuk jasa + Rp 20.000/bulan biaya server</p>
-        <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20pesan%20jasa%20pembuatan%20website" target="_blank" class="btn btn-gold">
+        <p id="ctaBottomDesc">Mulai dari Rp 50.000 untuk jasa + Rp 20.000/bulan biaya server</p>
+        <a href="#" id="ctaBottomBtn" target="_blank" class="btn btn-gold">
             <i class="fab fa-whatsapp"></i> Order Sekarang
         </a>
     </section>
@@ -1019,15 +1004,15 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="brand">
-            <div class="brand-icon">⚡</div>
+            <div class="brand-icon" id="footerBrandIcon">⚡</div>
             <div>
-                <div class="brand-text">SilverHold</div>
-                <div class="brand-sub">Jasa Website</div>
+                <div class="brand-text" id="footerBrandName">SilverHold</div>
+                <div class="brand-sub" id="footerBrandTagline">Jasa Website</div>
             </div>
         </div>
-        <p>© 2026 SilverHold. All rights reserved.</p>
+        <p>© <span id="year">2026</span> <span id="footerBrandName2">SilverHold</span>. All rights reserved.</p>
         <p>Made with ❤️ in Indonesia</p>
-        <a href="https://wa.me/6285167089251" target="_blank" class="wa-float">
+        <a href="#" id="footerWaBtn" target="_blank" class="wa-float">
             <i class="fab fa-whatsapp"></i> Chat dengan Kami
         </a>
     </footer>
@@ -1035,10 +1020,7 @@
 </div>
 
 <!-- ===== FLOATING WA ===== -->
-<a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website" 
-   target="_blank" 
-   class="wa-floating"
-   title="Chat via WhatsApp">
+<a href="#" id="floatingWaBtn" target="_blank" class="wa-floating" title="Chat via WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -1088,9 +1070,160 @@
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+</script>
 
-    console.log('%c⚡ SilverHold', 'color:#fbbf24; font-size:20px; font-weight:bold;');
-    console.log('%cJasa Website Rp 50.000 + Server Rp 20.000/bulan', 'color:#4ade80; font-size:12px;');
+<!-- ===== CONFIG LOADER ===== -->
+<script src="config.js"></script>
+<script>
+(function() {
+    if (!window.SILVERHOLD_CONFIG) {
+        console.warn('⚠️ config.js tidak ditemukan! Menggunakan default.');
+        return;
+    }
+    
+    const cfg = window.SILVERHOLD_CONFIG;
+    
+    const $ = id => document.getElementById(id);
+    const setText = (id, text) => { const el = $(id); if (el) el.textContent = text; };
+    const setHref = (id, href) => { const el = $(id); if (el) el.href = href; };
+    const setHtml = (id, html) => { const el = $(id); if (el) el.innerHTML = html; };
+    
+    const waLink = (msg = '') => {
+        const base = `https://wa.me/${cfg.contact.whatsapp}`;
+        return msg ? `${base}?text=${encodeURIComponent(msg)}` : base;
+    };
+    
+    // ===== MAINTENANCE MODE =====
+    if (cfg.maintenance.enabled) {
+        document.body.innerHTML = `
+            <div style="position:fixed;inset:0;background:linear-gradient(145deg,#0a0e1a 0%,#141c2e 50%,#1a2438 100%);display:flex;justify-content:center;align-items:center;padding:20px;z-index:99999;font-family:Inter,sans-serif;">
+                <div style="max-width:480px;background:rgba(14,22,40,0.85);backdrop-filter:blur(20px);border:1px solid rgba(251,191,36,0.2);border-radius:40px;padding:48px 36px;text-align:center;color:#e8ecf6;box-shadow:0 30px 80px rgba(0,0,0,0.6);">
+                    <div style="font-size:5rem;margin-bottom:20px;">🔧</div>
+                    <h1 style="font-size:1.6rem;font-weight:800;margin-bottom:12px;background:linear-gradient(135deg,#f0f0f0,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sedang Maintenance</h1>
+                    <p style="color:#8892a8;font-size:0.95rem;line-height:1.7;margin-bottom:24px;">${cfg.maintenance.message}</p>
+                    <div style="background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);border-radius:20px;padding:16px 20px;margin-bottom:24px;text-align:left;">
+                        <div style="display:flex;align-items:center;gap:10px;color:#c8d4e8;font-size:0.85rem;padding:6px 0;">
+                            <span>⏱️</span>
+                            <span>Estimasi selesai: <strong style="color:#fbbf24;">${cfg.maintenance.estimatedTime}</strong></span>
+                        </div>
+                    </div>
+                    <a href="${waLink('Halo, saya ingin bertanya tentang maintenance website.')}" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#0a0e1a;padding:14px 32px;border-radius:60px;font-weight:700;text-decoration:none;font-size:0.95rem;box-shadow:0 6px 20px rgba(37,211,102,0.3);">
+                        💬 Hubungi via WhatsApp
+                    </a>
+                    <p style="color:#5a6a7a;font-size:0.75rem;margin-top:24px;">© ${new Date().getFullYear()} ${cfg.branding.name}</p>
+                </div>
+            </div>
+        `;
+        return;
+    }
+    
+    // ===== APPLY BRANDING =====
+    document.title = `${cfg.branding.name} · Jasa Pembuatan Website Profesional`;
+    setText('brandIcon', cfg.branding.icon);
+    setText('brandName', cfg.branding.name);
+    setText('brandTagline', cfg.branding.tagline);
+    setText('footerBrandIcon', cfg.branding.icon);
+    setText('footerBrandName', cfg.branding.name);
+    setText('footerBrandTagline', cfg.branding.tagline);
+    setText('footerBrandName2', cfg.branding.name);
+    setText('year', new Date().getFullYear());
+    
+    // ===== APPLY HERO =====
+    setHtml('heroTitle', `Website Impian Anda<br>Mulai dari Rp ${cfg.pricing.servicePrice.toLocaleString('id-ID')}`);
+    
+    // ===== APPLY STATS =====
+    setText('statUptime', cfg.stats.uptime);
+    setText('statSupport', cfg.stats.support);
+    setText('statCustomers', cfg.stats.customers);
+    setText('statRating', cfg.stats.rating);
+    
+    // ===== APPLY LINKS =====
+    setHref('navLoginBtn', cfg.links.login);
+    setHref('heroWaBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan jasa pembuatan website'));
+    setHref('orderServiceBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan Jasa Pembuatan Website Rp ' + cfg.pricing.servicePrice.toLocaleString('id-ID')));
+    setHref('orderServerBtn', waLink('Halo ' + cfg.branding.name + ', saya mau tanya soal Biaya Server Rp ' + cfg.pricing.serverPrice.toLocaleString('id-ID') + '/bulan'));
+    setHref('ctaBottomBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan jasa pembuatan website'));
+    setHref('footerWaBtn', waLink('Halo ' + cfg.branding.name + ', saya tertarik dengan jasa pembuatan website'));
+    setHref('floatingWaBtn', waLink('Halo ' + cfg.branding.name + ', saya tertarik dengan jasa pembuatan website'));
+    
+    // ===== APPLY PRICING =====
+    setHtml('priceService', `Rp ${(cfg.pricing.servicePrice/1000)}<span>rb</span>`);
+    setHtml('priceServer', `Rp ${(cfg.pricing.serverPrice/1000)}<span>rb</span>`);
+    
+    setText('ctaBottomDesc', 
+        `Mulai dari Rp ${cfg.pricing.servicePrice.toLocaleString('id-ID')} untuk jasa + Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan biaya server`);
+    
+    const infoNote = $('infoNote');
+    if (infoNote) {
+        const total = cfg.pricing.servicePrice + cfg.pricing.serverPrice;
+        infoNote.innerHTML = `
+            <i class="fas fa-info-circle"></i>
+            <strong>Total awal:</strong> Rp ${cfg.pricing.servicePrice.toLocaleString('id-ID')} (jasa) + Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')} (bulan pertama) = <strong style="color:#fbbf24;">Rp ${total.toLocaleString('id-ID')}</strong>.
+            Selanjutnya hanya Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan untuk biaya server.
+        `;
+    }
+    
+    // ===== SECTION MAINTENANCE =====
+    if (cfg.sectionMaintenance.disableLogin) {
+        const btn = $('navLoginBtn');
+        if (btn) {
+            btn.style.opacity = '0.5';
+            btn.style.pointerEvents = 'none';
+            btn.title = cfg.messages.loginDisabled;
+        }
+    }
+    
+    // ===== PROMO BANNER =====
+    if (cfg.features.showPromoBanner && cfg.features.promoBannerText) {
+        const banner = document.createElement('div');
+        banner.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #0a0e1a;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            z-index: 9999;
+            box-shadow: 0 4px 20px rgba(251,191,36,0.3);
+        `;
+        banner.innerHTML = `<a href="${cfg.features.promoBannerLink}" style="color:#0a0e1a;text-decoration:none;">${cfg.features.promoBannerText}</a>`;
+        document.body.prepend(banner);
+        document.body.style.paddingTop = '40px';
+    }
+    
+    // ===== HIDE SECTIONS =====
+    if (!cfg.features.showStats) {
+        const el = $('statsBar');
+        if (el) el.style.display = 'none';
+    }
+    if (!cfg.features.showPricing) {
+        const el = $('pricing');
+        if (el) el.style.display = 'none';
+    }
+    if (!cfg.features.showFeatures) {
+        const el = $('features');
+        if (el) el.style.display = 'none';
+    }
+    if (!cfg.features.showFAQ) {
+        const el = $('faq');
+        if (el) el.style.display = 'none';
+    }
+    if (!cfg.features.showCTA) {
+        const el = document.querySelector('.cta-bottom');
+        if (el) el.style.display = 'none';
+    }
+    if (!cfg.features.showFloatingWA) {
+        const el = $('floatingWaBtn');
+        if (el) el.style.display = 'none';
+    }
+    
+    console.log(`%c⚙️ Config loaded: ${cfg.branding.name} v${cfg.version}`, 'color:#fbbf24;font-weight:bold;');
+    console.log(`%cMaintenance: ${cfg.maintenance.enabled ? '🔴 ON' : '🟢 OFF'}`, cfg.maintenance.enabled ? 'color:#f87171;' : 'color:#4ade80;');
+})();
 </script>
 </body>
 </html>
