@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SilverHold · Jasa Pembuatan Website Profesional</title>
+    <meta name="description" content="SilverHold - Jasa pembuatan website profesional Rp 50.000 + biaya server Rp 20.000/bulan. Keamanan data terjamin, support 24/7." />
+    <meta name="keywords" content="jasa website, pembuatan website, hosting, domain, silverhold, indonesia" />
+    <meta name="author" content="SilverHold" />
+    
+    <meta property="og:title" content="SilverHold · Jasa Pembuatan Website Profesional" />
+    <meta property="og:description" content="Jasa pembuatan website Rp 50.000 + biaya server Rp 20.000/bulan." />
+    <meta property="og:type" content="website" />
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background: linear-gradient(145deg, #0a0e1a 0%, #141c2e 50%, #1a2438 100%);
+            min-height: 100vh;
+            color: #e8ecf6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background:
+                radial-gradient(ellipse at 30% 50%, rgba(192, 192, 192, 0.03) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(255, 215, 0, 0.02) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 20%, rgba(59, 130, 246, 0.01) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .portal-wrapper {
+            position: relative;
+            z-index: 1;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 24px 20px 60px;
+        }
+        
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: rgba(14, 22, 40, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 60px;
+            margin-bottom: 24px;
+            position: sticky;
+            top: 16px;
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .navbar .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #a8a8a8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 900;
+            color: #0a0e1a;
+            box-shadow: 0 4px 15px rgba(192, 192, 192, 0.2);
+            flex-shrink: 0;
+        }
+        
+        .brand-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(to right, #f0f0f0, #d4d4d4, #b8b8b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .brand-sub {
+            font-size: 0.65rem;
+            color: #8892a8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #8892a8;
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 8px 16px;
+            border-radius: 40px;
+            transition: 0.2s;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #f0f4fe;
+            background: rgba(255,255,255,0.05);
+        }
+        
+        .nav-cta {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b) !important;
+            color: #0a0e1a !important;
+            font-weight: 700 !important;
+            padding: 8px 20px !important;
+            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+        }
+        
+        .nav-cta:hover {
+            background: linear-gradient(135deg, #fcd34d, #fbbf24) !important;
+            transform: translateY(-1px);
+        }
+        
+        /* ===== HERO ===== */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        
+        .badge-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.25);
+            color: #fbbf24;
+            padding: 8px 20px;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.85; }
+            50% { opacity: 1; }
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #c0c0c0 50%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.05rem;
+            color: #8892a8;
+            max-width: 620px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        /* ===== BUTTONS ===== */
+        .btn {
+            background: #2a3650;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.25s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #f0f4fe;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            border: 1px solid transparent;
+            font-family: inherit;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #0a0e1a;
+            box-shadow: 0 6px 16px rgba(251, 191, 36, 0.25);
+        }
+        
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #fcd34d, #fbbf24);
+            color: #0a0e1a;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #4a5a7a;
+            backdrop-filter: blur(4px);
+        }
+        
+        .btn-outline:hover {
+            background: rgba(74, 90, 122, 0.2);
+            border-color: #6a7a9a;
+        }
+        
+        .hero-cta .btn {
+            padding: 14px 32px;
+            font-size: 0.95rem;
+        }
+        
+        .w-full { width: 100%; }
+        
+        /* ===== STATS BAR ===== */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+        
+        .stat-box {
+            background: rgba(14, 22, 40, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
+            padding: 20px 16px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        
+        .stat-box:hover {
+            border-color: rgba(251, 191, 36, 0.3);
+            transform: translateY(-4px);
+        }
+        
+        .stat-box .num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fbbf24;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        
+        .stat-box .lbl {
+            font-size: 0.7rem;
+            color: #8892a8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        /* ===== SECTIONS ===== */
+        .section { margin-bottom: 60px; }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-header h2 {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 700;
+            color: #e8ecf6;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .section-header h2 i {
+            color: #fbbf24;
+            margin-right: 10px;
+        }
+        
+        .section-header p {
+            color: #8892a8;
+            font-size: 0.95rem;
+        }
+        
+        /* ===== PRICING SINGLE (2 KARTU) ===== */
+        .pricing-single {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: stretch;
+        }
+        
+        .price-card {
+            background: linear-gradient(145deg, rgba(20, 30, 50, 0.95), rgba(10, 16, 30, 0.98));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 32px;
+            padding: 44px 32px 36px;
+            text-align: center;
+            position: relative;
+            transition: 0.3s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(251, 191, 36, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        
+        .price-card.primary {
+            border-color: rgba(251, 191, 36, 0.4);
+            box-shadow: 0 0 60px rgba(251, 191, 36, 0.08);
+        }
+        
+        .price-card.primary:hover {
+            border-color: rgba(251, 191, 36, 0.6);
+            box-shadow: 0 0 80px rgba(251, 191, 36, 0.15);
+        }
+        
+        .price-card.secondary {
+            border-color: rgba(96, 165, 250, 0.3);
+        }
+        
+        .price-card.secondary::before {
+            background: radial-gradient(ellipse, rgba(96, 165, 250, 0.06) 0%, transparent 70%);
+        }
+        
+        .price-card.secondary:hover {
+            border-color: rgba(96, 165, 250, 0.5);
+            box-shadow: 0 0 60px rgba(96, 165, 250, 0.1);
+        }
+        
+        .featured-tag {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #0a0e1a;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+            white-space: nowrap;
+        }
+        
+        .price-card.secondary .featured-tag {
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);
+        }
+        
+        .price-card .plan-icon {
+            font-size: 3rem;
+            margin-bottom: 14px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .price-card h3 {
+            font-size: 1.4rem;
+            color: #e8ecf6;
+            margin-bottom: 8px;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .price-card .plan-desc {
+            color: #8892a8;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+            min-height: 40px;
+        }
+        
+        .price-card .price-amount {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .price-card.primary .price-amount {
+            color: #fbbf24;
+            text-shadow: 0 0 40px rgba(251, 191, 36, 0.3);
+        }
+        
+        .price-card.secondary .price-amount {
+            color: #60a5fa;
+            text-shadow: 0 0 40px rgba(96, 165, 250, 0.3);
+        }
+        
+        .price-card .price-amount span {
+            font-size: 1rem;
+            color: #8892a8;
+            font-weight: 600;
+        }
+        
+        .price-card .price-period {
+            font-size: 0.7rem;
+            color: #5a6a7a;
+            margin-bottom: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+        }
+        
+        .feature-list li {
+            color: #c8d4e8;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-list li i {
+            color: #4ade80;
+            font-size: 0.85rem;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(74, 222, 128, 0.1);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        
+        .price-card .btn {
+            position: relative;
+            z-index: 1;
+            padding: 14px 28px;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+        
+        /* Info tambahan */
+        .info-note {
+            max-width: 900px;
+            margin: 24px auto 0;
+            background: rgba(251, 191, 36, 0.05);
+            border: 1px solid rgba(251, 191, 36, 0.15);
+            border-radius: 20px;
+            padding: 16px 22px;
+            text-align: center;
+            color: #c8d4e8;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        
+        .info-note i {
+            color: #fbbf24;
+            margin-right: 6px;
+        }
+        
+        /* ===== FEATURES ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .feature-box {
+            background: rgba(14, 22, 40, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 24px 20px;
+            transition: 0.3s;
+        }
+        
+        .feature-box:hover {
+            border-color: rgba(96, 165, 250, 0.2);
+            transform: translateY(-4px);
+        }
+        
+        .feature-box .icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(96,165,250,0.15), rgba(96,165,250,0.05));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #60a5fa;
+            margin-bottom: 14px;
+        }
+        
+        .feature-box h3 {
+            color: #e8ecf6;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .feature-box p {
+            color: #8892a8;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        
+        /* ===== FAQ ===== */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .faq-item {
+            background: rgba(14, 22, 40, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(251, 191, 36, 0.2);
+        }
+        
+        .faq-q {
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #e8ecf6;
+            font-weight: 600;
+            font-size: 0.9rem;
+            gap: 12px;
+        }
+        
+        .faq-q i.chev {
+            color: #8892a8;
+            transition: transform 0.3s;
+            font-size: 0.8rem;
+        }
+        
+        .faq-item.open .faq-q i.chev {
+            transform: rotate(180deg);
+        }
+        
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+            padding: 0 24px;
+            color: #8892a8;
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+        
+        .faq-item.open .faq-a {
+            max-height: 300px;
+            padding: 0 24px 18px;
+        }
+        
+        /* ===== CTA BOTTOM ===== */
+        .cta-bottom {
+            background: linear-gradient(135deg, rgba(251,191,36,0.1), rgba(251,191,36,0.02));
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 32px;
+            padding: 48px 32px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-bottom::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .cta-bottom h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 800;
+            color: #e8ecf6;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-bottom p {
+            color: #8892a8;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-bottom .btn {
+            position: relative;
+            z-index: 1;
+            padding: 14px 36px;
+            font-size: 1rem;
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: 40px 20px 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer .brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .footer p {
+            color: #5a6a7a;
+            font-size: 0.8rem;
+            margin-bottom: 4px;
+        }
+        
+        .footer .wa-float {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #0a0e1a;
+            padding: 10px 22px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-top: 16px;
+            transition: 0.2s;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+        
+        .footer .wa-float:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* ===== FLOATING WA ===== */
+        .wa-floating {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0a0e1a;
+            font-size: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+            transition: 0.3s;
+            z-index: 999;
+            animation: pulse-wa 2s infinite;
+        }
+        
+        .wa-floating:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes pulse-wa {
+            0%, 100% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.7), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+        }
+        
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 960px) {
+            .pricing-single { grid-template-columns: 1fr; max-width: 480px; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 600px) {
+            .portal-wrapper { padding: 14px 12px 40px; }
+            .navbar { flex-direction: column; gap: 14px; padding: 14px 18px; border-radius: 28px; }
+            .nav-links { width: 100%; justify-content: center; flex-wrap: wrap; }
+            .nav-links a { font-size: 0.8rem; padding: 6px 12px; }
+            .hero { padding: 30px 10px 20px; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 0.9rem; }
+            .hero-cta .btn { padding: 11px 24px; font-size: 0.85rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .stats-bar { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .stat-box { padding: 14px 10px; }
+            .stat-box .num { font-size: 1.5rem; }
+            .cta-bottom { padding: 32px 20px; border-radius: 24px; }
+            .section { margin-bottom: 40px; }
+            .wa-floating { width: 52px; height: 52px; font-size: 1.5rem; bottom: 16px; right: 16px; }
+            .price-card { padding: 36px 22px 28px; border-radius: 24px; }
+            .price-card .price-amount { font-size: 2.4rem; }
+            .price-card h3 { font-size: 1.2rem; }
+            .info-note { font-size: 0.8rem; padding: 14px 18px; }
+        }
+        
+        @media (max-width: 380px) {
+            .nav-links a span { display: none; }
+        }
+    </style>
+</head>
+<body>
+<div class="portal-wrapper">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <a href="#hero" class="brand">
+            <div class="brand-icon">⚡</div>
+            <div>
+                <div class="brand-text">SilverHold</div>
+                <div class="brand-sub">Jasa Website</div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="#pricing"><i class="fas fa-tags"></i> <span>Harga</span></a>
+            <a href="#features"><i class="fas fa-star"></i> <span>Fitur</span></a>
+            <a href="#faq"><i class="fas fa-question-circle"></i> <span>FAQ</span></a>
+            <a href="https://beaches-adequate-maui-afternoon.trycloudflare.com/Hosting-SilverHold/login_page.php" target="_blank" class="nav-cta">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="badge-hero">
+            <i class="fas fa-bolt"></i> Jasa Pembuatan Website Profesional
+        </div>
+        <h1>Website Impian Anda<br>Mulai dari Rp 50.000</h1>
+        <p>
+            Jasa pembuatan website profesional + server berkualitas.
+            Hanya bayar sekali untuk pembuatan, dan biaya server ringan per bulan.
+        </p>
+        <div class="hero-cta">
+            <a href="#pricing" class="btn btn-gold">
+                <i class="fas fa-tags"></i> Lihat Harga
+            </a>
+            <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20pesan%20jasa%20pembuatan%20website" target="_blank" class="btn btn-outline">
+                <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats-bar">
+        <div class="stat-box">
+            <div class="num">99.9%</div>
+            <div class="lbl">Uptime</div>
+        </div>
+        <div class="stat-box">
+            <div class="num">24/7</div>
+            <div class="lbl">Support</div>
+        </div>
+        <div class="stat-box">
+            <div class="num">500+</div>
+            <div class="lbl">Pelanggan</div>
+        </div>
+        <div class="stat-box">
+            <div class="num">5★</div>
+            <div class="lbl">Rating</div>
+        </div>
+    </div>
+
+    <!-- ===== PRICING (2 KARTU: JASA + SERVER) ===== -->
+    <section class="section" id="pricing">
+        <div class="section-header">
+            <h2><i class="fas fa-tags"></i> Harga Transparan</h2>
+            <p>Bayar sekali untuk pembuatan, biaya server ringan per bulan</p>
+        </div>
+
+        <div class="pricing-single">
+            <!-- KARTU 1: JASA PEMBUATAN -->
+            <div class="price-card primary">
+                <div class="featured-tag">⭐ Sekali Bayar</div>
+                <div class="plan-icon">🛠️</div>
+                <h3>Jasa Pembuatan</h3>
+                <div class="plan-desc">Website profesional siap pakai</div>
+                <div class="price-amount">Rp 50<span>rb</span></div>
+                <div class="price-period">sekali bayar</div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Desain modern & responsif</li>
+                    <li><i class="fas fa-check"></i> Hingga 5 halaman</li>
+                    <li><i class="fas fa-check"></i> Domain .vercel.app</li>
+                    <li><i class="fas fa-check"></i> Optimasi SEO dasar</li>
+                    <li><i class="fas fa-check"></i> Integrasi WhatsApp</li>
+                    <li><i class="fas fa-check"></i> Revisi 2x</li>
+                </ul>
+                <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20pesan%20Jasa%20Pembuatan%20Website%20Rp%2050.000" target="_blank" class="btn btn-gold w-full">
+                    <i class="fab fa-whatsapp"></i> Order Jasa
+                </a>
+            </div>
+
+            <!-- KARTU 2: BIAYA SERVER -->
+            <div class="price-card secondary">
+                <div class="featured-tag">🔁 Per Bulan</div>
+                <div class="plan-icon">🌐</div>
+                <h3>Biaya Server</h3>
+                <div class="plan-desc">Hosting & maintenance bulanan</div>
+                <div class="price-amount">Rp 20<span>rb</span></div>
+                <div class="price-period">per bulan</div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Hosting NVMe SSD</li>
+                    <li><i class="fas fa-check"></i> 1 GB Storage</li>
+                    <li><i class="fas fa-check"></i> Keamanan Data Terjamin</li>
+                    <li><i class="fas fa-check"></i> Monitoring 24/7</li>
+                    <li><i class="fas fa-check"></i> Update & maintenance</li>
+                    <li><i class="fas fa-check"></i> Support prioritas</li>
+                </ul>
+                <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20tanya%20soal%20Biaya%20Server%20Rp%2020.000%2Fbulan" target="_blank" class="btn btn-outline w-full">
+                    <i class="fab fa-whatsapp"></i> Tanya Server
+                </a>
+            </div>
+        </div>
+
+        <div class="info-note">
+            <i class="fas fa-info-circle"></i>
+            <strong>Total awal:</strong> Rp 50.000 (jasa) + Rp 20.000 (bulan pertama) = <strong style="color:#fbbf24;">Rp 70.000</strong>.
+            Selanjutnya hanya Rp 20.000/bulan untuk biaya server.
+        </div>
+    </section>
+
+    <!-- ===== FITUR ===== -->
+    <section class="section" id="features">
+        <div class="section-header">
+            <h2><i class="fas fa-star"></i> Kenapa SilverHold?</h2>
+            <p>Fitur unggulan yang kami tawarkan</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="icon"><i class="fas fa-bolt"></i></div>
+                <h3>Super Cepat</h3>
+                <p>Server NVMe SSD dengan kecepatan akses tinggi dan latency rendah.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon"><i class="fas fa-lock"></i></div>
+                <h3>Keamanan Data</h3>
+                <p>Data Anda terjamin aman dengan enkripsi dan proteksi berlapis.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon"><i class="fas fa-headset"></i></div>
+                <h3>Support 24/7</h3>
+                <p>Tim support profesional siap membantu kapan pun dibutuhkan.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Monitoring Real-time</h3>
+                <p>Pantau uptime, performa, dan masa aktif website Anda real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+        <div class="section-header">
+            <h2><i class="fas fa-question-circle"></i> Pertanyaan Umum</h2>
+            <p>Jawaban untuk pertanyaan yang sering ditanyakan</p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">
+                    Bagaimana cara order?
+                    <i class="fas fa-chevron-down chev"></i>
+                </div>
+                <div class="faq-a">
+                    Klik tombol "Order Jasa" atau "Konsultasi Gratis", lalu chat via WhatsApp.
+                    Tim kami akan membantu prosesnya dari konsultasi sampai website Anda online.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">
+                    Kenapa biaya server per bulan?
+                    <i class="fas fa-chevron-down chev"></i>
+                </div>
+                <div class="faq-a">
+                    Biaya server Rp 20.000/bulan digunakan untuk maintenance hosting, keamanan data,
+                    monitoring, dan update berkala. Jasa pembuatan cukup sekali bayar Rp 50.000.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">
+                    Apakah ada garansi uang kembali?
+                    <i class="fas fa-chevron-down chev"></i>
+                </div>
+                <div class="faq-a">
+                    Ya, kami memberikan garansi 7 hari uang kembali untuk jasa pembuatan jika Anda
+                    tidak puas dengan hasilnya. Tanpa pertanyaan, tanpa ribet.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">
+                    Berapa lama proses pembuatan?
+                    <i class="fas fa-chevron-down chev"></i>
+                </div>
+                <div class="faq-a">
+                    Rata-rata 1-3 hari kerja tergantung kompleksitas website. Untuk website simple,
+                    bisa selesai dalam 1 hari.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">
+                    Metode pembayaran apa saja?
+                    <i class="fas fa-chevron-down chev"></i>
+                </div>
+                <div class="faq-a">
+                    Kami menerima transfer bank (BCA, Mandiri, BNI), e-wallet (DANA, OVO, GoPay),
+                    dan QRIS untuk kemudahan Anda.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BOTTOM ===== -->
+    <section class="cta-bottom">
+        <h2>Siap Punya Website Sendiri?</h2>
+        <p>Mulai dari Rp 50.000 untuk jasa + Rp 20.000/bulan biaya server</p>
+        <a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20mau%20pesan%20jasa%20pembuatan%20website" target="_blank" class="btn btn-gold">
+            <i class="fab fa-whatsapp"></i> Order Sekarang
+        </a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="brand">
+            <div class="brand-icon">⚡</div>
+            <div>
+                <div class="brand-text">SilverHold</div>
+                <div class="brand-sub">Jasa Website</div>
+            </div>
+        </div>
+        <p>© 2026 SilverHold. All rights reserved.</p>
+        <p>Made with ❤️ in Indonesia</p>
+        <a href="https://wa.me/6285167089251" target="_blank" class="wa-float">
+            <i class="fab fa-whatsapp"></i> Chat dengan Kami
+        </a>
+    </footer>
+
+</div>
+
+<!-- ===== FLOATING WA ===== -->
+<a href="https://wa.me/6285167089251?text=Halo%20SilverHold%2C%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website" 
+   target="_blank" 
+   class="wa-floating"
+   title="Chat via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+    function toggleFaq(el) {
+        el.classList.toggle('open');
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.style.boxShadow = '0 15px 40px rgba(0,0,0,0.5)';
+        } else {
+            navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
+        }
+    });
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.price-card, .feature-box, .stat-box, .faq-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+
+    console.log('%c⚡ SilverHold', 'color:#fbbf24; font-size:20px; font-weight:bold;');
+    console.log('%cJasa Website Rp 50.000 + Server Rp 20.000/bulan', 'color:#4ade80; font-size:12px;');
+</script>
+</body>
+</html>
