@@ -17,9 +17,9 @@ const SILVERHOLD_CONFIG = {
 
     // ===== LINK UTAMA =====
     links: {
-        login: 'https://beaches-adequate-maui-afternoon.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://beaches-adequate-maui-afternoon.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://beaches-adequate-maui-afternoon.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://hardware-gpl-paragraphs-prisoner.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://hardware-gpl-paragraphs-prisoner.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://hardware-gpl-paragraphs-prisoner.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     // ===== KONTAK =====
