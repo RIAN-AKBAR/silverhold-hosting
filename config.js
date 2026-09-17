@@ -17,9 +17,9 @@ const SILVERHOLD_CONFIG = {
 
     // ===== LINK UTAMA =====
     links: {
-        login: 'https://hardware-gpl-paragraphs-prisoner.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://hardware-gpl-paragraphs-prisoner.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://hardware-gpl-paragraphs-prisoner.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://north-charming-impaired-missed.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://north-charming-impaired-missed.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://north-charming-impaired-missed.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     // ===== KONTAK =====
