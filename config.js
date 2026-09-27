@@ -7,7 +7,7 @@ const SILVERHOLD_CONFIG = {
     
     // ===== MODE MAINTENANCE =====
     maintenance: {
-        enabled: false,
+        enabled: true,
         message: 'Website sedang dalam perbaikan. Mohon kembali lagi nanti.',
         estimatedTime: '2 jam',
         contactWhatsApp: '6285167089251',
