@@ -7,7 +7,7 @@ const SILVERHOLD_CONFIG = {
     
     // ===== MODE MAINTENANCE =====
     maintenance: {
-        enabled: true,
+        enabled: false,
         message: 'Website sedang dalam perbaikan. Mohon kembali lagi nanti.',
         estimatedTime: '2 jam',
         contactWhatsApp: '6285167089251',
@@ -17,9 +17,9 @@ const SILVERHOLD_CONFIG = {
 
     // ===== LINK UTAMA =====
     links: {
-        login: 'https://north-charming-impaired-missed.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://north-charming-impaired-missed.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://north-charming-impaired-missed.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://likewise-perception-petroleum-gaming.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://likewise-perception-petroleum-gaming.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://likewise-perception-petroleum-gaming.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     // ===== KONTAK =====
