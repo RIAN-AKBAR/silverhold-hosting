@@ -1,6 +1,5 @@
 /* ============================================
    SILVERHOLD - CONFIG FILE
-   Edit file ini untuk mengubah semua pengaturan
    ============================================ */
 
 const SILVERHOLD_CONFIG = {
@@ -37,16 +36,15 @@ const SILVERHOLD_CONFIG = {
         icon: '⚡',
         primaryColor: '#fbbf24',
         secondaryColor: '#60a5fa',
-        logoUrl: 'logo.jpg'   // <-- Ganti logo di sini
+        logoUrl: 'logo.jpg'
     },
 
     // ===== HARGA =====
-    // servicePrice = TOTAL AWAL (jasa + server bulan pertama) = Rp 70.000
-    // serverPrice  = biaya server per bulan berikutnya = Rp 20.000
+    // servicePrice = TOTAL AWAL (jasa + GRATIS server bulan pertama) = Rp 70.000
+    // serverPrice  = biaya server bulan KEDUA dst = Rp 20.000/bulan
     pricing: {
-        jasaOnly: 50000,      // harga jasa saja (untuk referensi)
-        servicePrice: 70000,  // total awal: jasa + server bulan pertama
-        serverPrice: 20000,   // biaya server per bulan
+        servicePrice: 70000,   // total awal — sudah include server bulan pertama
+        serverPrice: 20000,    // biaya server mulai bulan ke-2
         serverPeriod: 'per bulan'
     },
 
@@ -90,12 +88,10 @@ const SILVERHOLD_CONFIG = {
     lastUpdate: '2026-01-15'
 };
 
-// ===== EXPORT =====
 if (typeof window !== 'undefined') {
     window.SILVERHOLD_CONFIG = SILVERHOLD_CONFIG;
 }
 
-// Cek maintenance mode saat halaman load
 if (typeof window !== 'undefined' && SILVERHOLD_CONFIG.maintenance.enabled) {
     if (SILVERHOLD_CONFIG.maintenance.autoRedirectDelay > 0) {
         setTimeout(() => {
