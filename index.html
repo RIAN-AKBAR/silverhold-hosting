@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="google-site-verification" content="6dEtaIkJpwm1sLp6CN9VNgpkugcTLIB7nE8nhp_4F8E" />
     <title>SilverHold · Jasa Pembuatan Website Profesional</title>
-    <meta name="description" content="SilverHold - Jasa pembuatan website profesional Rp 50.000 + biaya server Rp 20.000/bulan. Keamanan data terjamin, support 24/7." />
+    <meta name="description" content="SilverHold - Jasa pembuatan website profesional Rp 70.000 (sudah termasuk server bulan pertama) + biaya server Rp 20.000/bulan. Keamanan data terjamin, support 24/7." />
     <meta name="keywords" content="jasa website, pembuatan website, hosting, domain, silverhold, indonesia" />
     <meta name="author" content="SilverHold" />
     
     <meta property="og:title" content="SilverHold · Jasa Pembuatan Website Profesional" />
-    <meta property="og:description" content="Jasa pembuatan website Rp 50.000 + biaya server Rp 20.000/bulan." />
+    <meta property="og:description" content="Jasa pembuatan website Rp 70.000 (sudah termasuk server bulan pertama) + biaya server Rp 20.000/bulan." />
     <meta property="og:type" content="website" />
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
@@ -98,6 +98,18 @@
             color: #0a0e1a;
             box-shadow: 0 4px 15px rgba(192, 192, 192, 0.2);
             flex-shrink: 0;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .brand-icon.has-logo {
+            background-image: url('logo.jpg');
+        }
+        
+        .brand-icon.has-logo span {
+            display: none;
         }
         
         .brand-text {
@@ -789,7 +801,7 @@
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <a href="#hero" class="brand">
-            <div class="brand-icon" id="brandIcon">⚡</div>
+            <div class="brand-icon has-logo" id="brandIcon"><span>⚡</span></div>
             <div>
                 <div class="brand-text" id="brandName">SilverHold</div>
                 <div class="brand-sub" id="brandTagline">Jasa Website</div>
@@ -810,10 +822,11 @@
         <div class="badge-hero">
             <i class="fas fa-bolt"></i> <span id="heroBadge">Jasa Pembuatan Website Profesional</span>
         </div>
-        <h1 id="heroTitle">Website Impian Anda<br>Mulai dari Rp 50.000</h1>
+        <h1 id="heroTitle">Website Impian Anda<br>Mulai dari Rp 70.000</h1>
         <p id="heroDesc">
             Jasa pembuatan website profesional + server berkualitas.
-            Hanya bayar sekali untuk pembuatan, dan biaya server ringan per bulan.
+            Hanya bayar sekali untuk pembuatan (sudah termasuk server bulan pertama),
+            selanjutnya cukup Rp 20.000/bulan.
         </p>
         <div class="hero-cta">
             <a href="#pricing" class="btn btn-gold">
@@ -849,17 +862,17 @@
     <section class="section" id="pricing">
         <div class="section-header">
             <h2><i class="fas fa-tags"></i> Harga Transparan</h2>
-            <p>Bayar sekali untuk pembuatan, biaya server ringan per bulan</p>
+            <p>Bayar sekali untuk pembuatan (include server bulan pertama), selanjutnya cukup biaya server per bulan</p>
         </div>
 
         <div class="pricing-single">
             <div class="price-card primary">
-                <div class="featured-tag">⭐ Sekali Bayar</div>
-                <div class="plan-icon">🛠️</div>
-                <h3>Jasa Pembuatan</h3>
-                <div class="plan-desc">Website profesional siap pakai</div>
-                <div class="price-amount" id="priceService">Rp 50<span>rb</span></div>
-                <div class="price-period">sekali bayar</div>
+                <div class="featured-tag">⭐ Paket Lengkap</div>
+                <div class="plan-icon">🚀</div>
+                <h3>Jasa + Server</h3>
+                <div class="plan-desc">Website profesional siap pakai + server bulan pertama</div>
+                <div class="price-amount" id="priceService">Rp 70<span>rb</span></div>
+                <div class="price-period">sekali bayar (include server bln 1)</div>
                 <ul class="feature-list">
                     <li><i class="fas fa-check"></i> Desain modern & responsif</li>
                     <li><i class="fas fa-check"></i> Hingga 5 halaman</li>
@@ -867,9 +880,10 @@
                     <li><i class="fas fa-check"></i> Optimasi SEO dasar</li>
                     <li><i class="fas fa-check"></i> Integrasi WhatsApp</li>
                     <li><i class="fas fa-check"></i> Revisi 2x</li>
+                    <li><i class="fas fa-check"></i> <strong style="color:#fbbf24;">GRATIS server bulan pertama</strong></li>
                 </ul>
                 <a href="#" id="orderServiceBtn" target="_blank" class="btn btn-gold w-full">
-                    <i class="fab fa-whatsapp"></i> Order Jasa
+                    <i class="fab fa-whatsapp"></i> Order Sekarang
                 </a>
             </div>
 
@@ -877,7 +891,7 @@
                 <div class="featured-tag">🔁 Per Bulan</div>
                 <div class="plan-icon">🌐</div>
                 <h3>Biaya Server</h3>
-                <div class="plan-desc">Hosting & maintenance bulanan</div>
+                <div class="plan-desc">Hosting & maintenance bulan berikutnya</div>
                 <div class="price-amount" id="priceServer">Rp 20<span>rb</span></div>
                 <div class="price-period">per bulan</div>
                 <ul class="feature-list">
@@ -896,8 +910,8 @@
 
         <div class="info-note" id="infoNote">
             <i class="fas fa-info-circle"></i>
-            <strong>Total awal:</strong> Rp 50.000 (jasa) + Rp 20.000 (bulan pertama) = <strong style="color:#fbbf24;">Rp 70.000</strong>.
-            Selanjutnya hanya Rp 20.000/bulan untuk biaya server.
+            <strong>Total awal:</strong> Rp 70.000 (sudah termasuk jasa + server bulan pertama).
+            Selanjutnya hanya <strong style="color:#60a5fa;">Rp 20.000/bulan</strong> untuk biaya server.
         </div>
     </section>
 
@@ -946,7 +960,7 @@
                     <i class="fas fa-chevron-down chev"></i>
                 </div>
                 <div class="faq-a">
-                    Klik tombol "Order Jasa" atau "Konsultasi Gratis", lalu chat via WhatsApp.
+                    Klik tombol "Order Sekarang" atau "Konsultasi Gratis", lalu chat via WhatsApp.
                     Tim kami akan membantu prosesnya dari konsultasi sampai website Anda online.
                 </div>
             </div>
@@ -956,8 +970,9 @@
                     <i class="fas fa-chevron-down chev"></i>
                 </div>
                 <div class="faq-a">
-                    Biaya server Rp 20.000/bulan digunakan untuk maintenance hosting, keamanan data,
-                    monitoring, dan update berkala. Jasa pembuatan cukup sekali bayar Rp 50.000.
+                    Biaya Rp 20.000/bulan digunakan untuk maintenance hosting, keamanan data,
+                    monitoring, dan update berkala. Pembayaran pertama Rp 70.000 sudah termasuk
+                    jasa pembuatan + server bulan pertama.
                 </div>
             </div>
             <div class="faq-item" onclick="toggleFaq(this)">
@@ -996,7 +1011,7 @@
     <!-- ===== CTA BOTTOM ===== -->
     <section class="cta-bottom">
         <h2>Siap Punya Website Sendiri?</h2>
-        <p id="ctaBottomDesc">Mulai dari Rp 50.000 untuk jasa + Rp 20.000/bulan biaya server</p>
+        <p id="ctaBottomDesc">Hanya Rp 70.000 sekali bayar (include server bulan pertama), selanjutnya Rp 20.000/bulan</p>
         <a href="#" id="ctaBottomBtn" target="_blank" class="btn btn-gold">
             <i class="fab fa-whatsapp"></i> Order Sekarang
         </a>
@@ -1005,7 +1020,7 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="brand">
-            <div class="brand-icon" id="footerBrandIcon">⚡</div>
+            <div class="brand-icon has-logo" id="footerBrandIcon"><span>⚡</span></div>
             <div>
                 <div class="brand-text" id="footerBrandName">SilverHold</div>
                 <div class="brand-sub" id="footerBrandTagline">Jasa Website</div>
@@ -1120,17 +1135,25 @@
     
     // ===== APPLY BRANDING =====
     document.title = `${cfg.branding.name} · Jasa Pembuatan Website Profesional`;
-    setText('brandIcon', cfg.branding.icon);
     setText('brandName', cfg.branding.name);
     setText('brandTagline', cfg.branding.tagline);
-    setText('footerBrandIcon', cfg.branding.icon);
     setText('footerBrandName', cfg.branding.name);
     setText('footerBrandTagline', cfg.branding.tagline);
     setText('footerBrandName2', cfg.branding.name);
     setText('year', new Date().getFullYear());
     
+    // ===== LOGO IMAGE =====
+    // Logo diambil dari file 'logo.jpg' (letakkan file logo.jpg di folder yang sama)
+    const logoUrl = 'logo.jpg';
+    
     // ===== APPLY HERO =====
-    setHtml('heroTitle', `Website Impian Anda<br>Mulai dari Rp ${cfg.pricing.servicePrice.toLocaleString('id-ID')}`);
+    const totalAwal = cfg.pricing.servicePrice + cfg.pricing.serverPrice;
+    setHtml('heroTitle', `Website Impian Anda<br>Mulai dari Rp ${totalAwal.toLocaleString('id-ID')}`);
+    if ($('heroDesc')) {
+        $('heroDesc').innerHTML = `Jasa pembuatan website profesional + server berkualitas.
+            Hanya bayar <strong style="color:#fbbf24;">Rp ${totalAwal.toLocaleString('id-ID')}</strong> sekali (sudah termasuk server bulan pertama),
+            selanjutnya cukup <strong style="color:#60a5fa;">Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan</strong>.`;
+    }
     
     // ===== APPLY STATS =====
     setText('statUptime', cfg.stats.uptime);
@@ -1138,29 +1161,28 @@
     setText('statCustomers', cfg.stats.customers);
     setText('statRating', cfg.stats.rating);
     
-    // ===== APPLY LINKS =====
+    // ===== APPLY LINKS (termasuk LOGIN ke cloudflare tunnel dari config) =====
     setHref('navLoginBtn', cfg.links.login);
     setHref('heroWaBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan jasa pembuatan website'));
-    setHref('orderServiceBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan Jasa Pembuatan Website Rp ' + cfg.pricing.servicePrice.toLocaleString('id-ID')));
+    setHref('orderServiceBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan paket Website Rp ' + totalAwal.toLocaleString('id-ID') + ' (sudah termasuk server bulan pertama)'));
     setHref('orderServerBtn', waLink('Halo ' + cfg.branding.name + ', saya mau tanya soal Biaya Server Rp ' + cfg.pricing.serverPrice.toLocaleString('id-ID') + '/bulan'));
-    setHref('ctaBottomBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan jasa pembuatan website'));
+    setHref('ctaBottomBtn', waLink('Halo ' + cfg.branding.name + ', saya mau pesan jasa pembuatan website Rp ' + totalAwal.toLocaleString('id-ID')));
     setHref('footerWaBtn', waLink('Halo ' + cfg.branding.name + ', saya tertarik dengan jasa pembuatan website'));
     setHref('floatingWaBtn', waLink('Halo ' + cfg.branding.name + ', saya tertarik dengan jasa pembuatan website'));
     
     // ===== APPLY PRICING =====
-    setHtml('priceService', `Rp ${(cfg.pricing.servicePrice/1000)}<span>rb</span>`);
+    setHtml('priceService', `Rp ${(totalAwal/1000)}<span>rb</span>`);
     setHtml('priceServer', `Rp ${(cfg.pricing.serverPrice/1000)}<span>rb</span>`);
     
     setText('ctaBottomDesc', 
-        `Mulai dari Rp ${cfg.pricing.servicePrice.toLocaleString('id-ID')} untuk jasa + Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan biaya server`);
+        `Hanya Rp ${totalAwal.toLocaleString('id-ID')} sekali bayar (include server bulan pertama), selanjutnya Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan`);
     
     const infoNote = $('infoNote');
     if (infoNote) {
-        const total = cfg.pricing.servicePrice + cfg.pricing.serverPrice;
         infoNote.innerHTML = `
             <i class="fas fa-info-circle"></i>
-            <strong>Total awal:</strong> Rp ${cfg.pricing.servicePrice.toLocaleString('id-ID')} (jasa) + Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')} (bulan pertama) = <strong style="color:#fbbf24;">Rp ${total.toLocaleString('id-ID')}</strong>.
-            Selanjutnya hanya Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan untuk biaya server.
+            <strong>Total awal:</strong> Rp ${totalAwal.toLocaleString('id-ID')} (sudah termasuk jasa + server bulan pertama).
+            Selanjutnya hanya <strong style="color:#60a5fa;">Rp ${cfg.pricing.serverPrice.toLocaleString('id-ID')}/bulan</strong> untuk biaya server.
         `;
     }
     
