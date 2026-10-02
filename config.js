@@ -4,7 +4,6 @@
 
 const SILVERHOLD_CONFIG = {
     
-    // ===== MODE MAINTENANCE =====
     maintenance: {
         enabled: false,
         message: 'Website sedang dalam perbaikan. Mohon kembali lagi nanti.',
@@ -14,14 +13,12 @@ const SILVERHOLD_CONFIG = {
         autoRedirectDelay: 0
     },
 
-    // ===== LINK UTAMA =====
     links: {
         login: 'https://biography-shelf-canberra-ethics.trycloudflare.com/Hosting-SilverHold/login_page.php',
         register: 'https://biography-shelf-canberra-ethics.trycloudflare.com/Hosting-SilverHold/daftar.html',
         adminPanel: 'https://biography-shelf-canberra-ethics.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
-    // ===== KONTAK =====
     contact: {
         whatsapp: '6285167089251',
         email: 'admin@silverhold.com',
@@ -29,7 +26,6 @@ const SILVERHOLD_CONFIG = {
         telegram: ''
     },
 
-    // ===== BRANDING =====
     branding: {
         name: 'SilverHold',
         tagline: 'Jasa Website',
@@ -40,15 +36,15 @@ const SILVERHOLD_CONFIG = {
     },
 
     // ===== HARGA =====
-    // servicePrice = TOTAL AWAL (jasa + GRATIS server bulan pertama) = Rp 70.000
-    // serverPrice  = biaya server bulan KEDUA dst = Rp 20.000/bulan
+    // jasaPrice   = biaya pembuatan website        = Rp 50.000
+    // serverPrice = biaya server per bulan         = Rp 20.000
+    // totalAwal   = jasaPrice + serverPrice        = Rp 70.000 (include server bulan 1)
     pricing: {
-        servicePrice: 70000,   // total awal — sudah include server bulan pertama
-        serverPrice: 20000,    // biaya server mulai bulan ke-2
+        jasaPrice: 50000,
+        serverPrice: 20000,
         serverPeriod: 'per bulan'
     },
 
-    // ===== STATISTIK =====
     stats: {
         uptime: '99.9%',
         support: '24/7',
@@ -56,7 +52,6 @@ const SILVERHOLD_CONFIG = {
         rating: '5★'
     },
 
-    // ===== FITUR =====
     features: {
         showStats: true,
         showPricing: true,
@@ -69,21 +64,18 @@ const SILVERHOLD_CONFIG = {
         promoBannerLink: '#pricing'
     },
 
-    // ===== MAINTENANCE PER SECTION =====
     sectionMaintenance: {
         disableLogin: false,
         disableRegister: false,
         disableOrder: false
     },
 
-    // ===== PESAN SISTEM =====
     messages: {
         loginDisabled: 'Login sedang dalam perbaikan. Coba lagi nanti.',
         registerDisabled: 'Pendaftaran sedang ditutup sementara.',
         orderDisabled: 'Order sedang ditutup sementara. Hubungi WhatsApp untuk info.'
     },
 
-    // ===== VERSION =====
     version: '1.0.0',
     lastUpdate: '2026-01-15'
 };
