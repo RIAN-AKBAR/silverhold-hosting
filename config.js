@@ -1,9 +1,4 @@
-/* ============================================
-   SILVERHOLD - CONFIG FILE
-   ============================================ */
-
 const SILVERHOLD_CONFIG = {
-    
     maintenance: {
         enabled: false,
         message: 'Website sedang dalam perbaikan. Mohon kembali lagi nanti.',
@@ -36,9 +31,9 @@ const SILVERHOLD_CONFIG = {
     },
 
     // ===== HARGA =====
-    // jasaPrice   = biaya pembuatan website        = Rp 50.000
-    // serverPrice = biaya server per bulan         = Rp 20.000
-    // totalAwal   = jasaPrice + serverPrice        = Rp 70.000 (include server bulan 1)
+    // jasaPrice   = 50.000 (biaya pembuatan)
+    // serverPrice = 20.000 (biaya server per bulan)
+    // totalAwal   = jasaPrice + serverPrice = 70.000 (include server bln 1)
     pricing: {
         jasaPrice: 50000,
         serverPrice: 20000,
