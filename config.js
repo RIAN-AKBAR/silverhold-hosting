@@ -36,13 +36,17 @@ const SILVERHOLD_CONFIG = {
         tagline: 'Jasa Website',
         icon: '⚡',
         primaryColor: '#fbbf24',
-        secondaryColor: '#60a5fa'
+        secondaryColor: '#60a5fa',
+        logoUrl: 'logo.jpg'   // <-- Ganti logo di sini
     },
 
     // ===== HARGA =====
+    // servicePrice = TOTAL AWAL (jasa + server bulan pertama) = Rp 70.000
+    // serverPrice  = biaya server per bulan berikutnya = Rp 20.000
     pricing: {
-        servicePrice: 50000,
-        serverPrice: 20000,
+        jasaOnly: 50000,      // harga jasa saja (untuk referensi)
+        servicePrice: 70000,  // total awal: jasa + server bulan pertama
+        serverPrice: 20000,   // biaya server per bulan
         serverPeriod: 'per bulan'
     },
 
