@@ -9,9 +9,9 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://biography-shelf-canberra-ethics.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://biography-shelf-canberra-ethics.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://biography-shelf-canberra-ethics.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://useful-nights-sensitivity-email.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://useful-nights-sensitivity-email.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://useful-nights-sensitivity-email.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     contact: {
