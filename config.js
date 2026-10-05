@@ -1,8 +1,8 @@
 const SILVERHOLD_CONFIG = {
     maintenance: {
-        enabled: false,
+        enabled: true,
         message: 'Website sedang dalam perbaikan. Mohon kembali lagi nanti.',
-        estimatedTime: '2 jam',
+        estimatedTime: '3 jam',
         contactWhatsApp: '6285167089251',
         alternativeLink: '',
         autoRedirectDelay: 0
