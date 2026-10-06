@@ -1,6 +1,6 @@
 const SILVERHOLD_CONFIG = {
     maintenance: {
-        enabled: true,
+        enabled: false,
         message: 'Website sedang dalam perbaikan. Mohon kembali lagi nanti.',
         estimatedTime: '3 jam',
         contactWhatsApp: '6285167089251',
@@ -9,14 +9,14 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://useful-nights-sensitivity-email.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://useful-nights-sensitivity-email.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://useful-nights-sensitivity-email.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://bacterial-rent-tears-edwards.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://bacterial-rent-tears-edwards.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://bacterial-rent-tears-edwards.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     contact: {
         whatsapp: '6285167089251',
-        email: 'admin@silverhold.com',
+        email: 'rian032008@gmail.com',
         instagram: '',
         telegram: ''
     },
