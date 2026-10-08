@@ -9,9 +9,9 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://biol-recommends-matthew-publisher.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://biol-recommends-matthew-publisher.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://biol-recommends-matthew-publisher.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://string-reveal-iso-bits.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://string-reveal-iso-bits.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://string-reveal-iso-bits.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     contact: {
