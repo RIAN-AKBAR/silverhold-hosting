@@ -9,9 +9,9 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'http://vegas-catering-mind-ids.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'http://vegas-catering-mind-ids.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'http://vegas-catering-mind-ids.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://maps-aids-attend-stranger.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://maps-aids-attend-stranger.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://maps-aids-attend-stranger.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     contact: {
