@@ -9,9 +9,9 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://maps-aids-attend-stranger.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://maps-aids-attend-stranger.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://maps-aids-attend-stranger.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://centered-blocked-neural-taken.trycloudflare.com/Hosting-SilverHold/login_page.php',
+        register: 'https://centered-blocked-neural-taken.trycloudflare.com/Hosting-SilverHold/daftar.html',
+        adminPanel: 'https://centered-blocked-neural-taken.trycloudflare.com/Hosting-SilverHold/login_admin.php'
     },
 
     contact: {
