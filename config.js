@@ -9,9 +9,8 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://fix-structures-wallace-lobby.trycloudflare.com/Hosting-SilverHold/login_page.php',
-        register: 'https://fix-structures-wallace-lobby.trycloudflare.com/Hosting-SilverHold/daftar.html',
-        adminPanel: 'https://fix-structures-wallace-lobby.trycloudflare.com/Hosting-SilverHold/login_admin.php'
+        login: 'https://association-dimensional-happened-digest.trycloudflare.com/server_silverhold',
+        adminPanel: 'https://association-dimensional-happened-digest.trycloudflare.com/server_silverhold'
     },
 
     contact: {
