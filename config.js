@@ -9,8 +9,8 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://association-dimensional-happened-digest.trycloudflare.com/server_silverhold',
-        adminPanel: 'https://association-dimensional-happened-digest.trycloudflare.com/server_silverhold'
+        login: 'https://acids-evans-champion-tulsa.trycloudflare.com/server_silverhold',
+        adminPanel: 'https://acids-evans-champion-tulsa.trycloudflare.com/server_silverhold'
     },
 
     contact: {
