@@ -9,8 +9,8 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'https://acids-evans-champion-tulsa.trycloudflare.com/server_silverhold',
-        adminPanel: 'https://acids-evans-champion-tulsa.trycloudflare.com/server_silverhold'
+        login: 'silverhold-hosting.web.id/server_silverhold',
+        adminPanel: 'silverhold-hosting.web.id/server_silverhold'
     },
 
     contact: {
