@@ -9,8 +9,8 @@ const SILVERHOLD_CONFIG = {
     },
 
     links: {
-        login: 'silverhold-hosting.web.id/server_silverhold',
-        adminPanel: 'silverhold-hosting.web.id/server_silverhold'
+        login: 'https://silverhold-hosting.web.id/server_silverhold',
+        adminPanel: 'https://silverhold-hosting.web.id/server_silverhold'
     },
 
     contact: {
